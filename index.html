@@ -5,15 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Send The Song</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        function navigateTo(page) {
-            if (page === 'form') {
-                window.location.href = "submit.html";
-            } else if (page === 'browse') {
-                window.location.href = "browse.html";
-            }
-        }
-    </script>
 </head>
 <body>
     <header class="header">
@@ -42,5 +33,20 @@
     <footer class="footer">
         <p>© 2024 SendTheSong. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Fungsi navigateTo untuk mengarahkan ke halaman yang sesuai
+        function navigateTo(page) {
+            console.log('navigateTo function called with page:', page);  // Debugging log
+
+            if (page === 'form') {
+                console.log('Redirecting to submit.html');  // Debugging log
+                window.location.href = "submit.html";
+            } else if (page === 'browse') {
+                console.log('Redirecting to browse.html');  // Debugging log
+                window.location.href = "browse.html";
+            }
+        }
+    </script>
 </body>
 </html>
