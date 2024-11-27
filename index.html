@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Send The Song</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function navigateTo(page) {
+            if (page === 'form') {
+                window.location.href = "submit.html";
+            } else if (page === 'browse') {
+                window.location.href = "browse.html";
+            }
+        }
+    </script>
 </head>
 <body>
     <header class="header">
@@ -33,7 +42,5 @@
     <footer class="footer">
         <p>© 2024 SendTheSong. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
